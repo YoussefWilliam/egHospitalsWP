@@ -2292,7 +2292,7 @@ margin: 20px 0;
   border-radius: 51px;
   background-color: #ffffff;
   font-weight: bold;
-  font-family: 'Arabic font';
+  font-family: 'robotoArabic2';
   font-size: 25px;
   font-weight: bold;
   font-style: normal;
@@ -2300,9 +2300,12 @@ margin: 20px 0;
   line-height: 1.92;
   letter-spacing: normal;
   text-align: right;
+  padding: 0 10px;
   color: #000000;
   outline: none;
   display: inline-block;
+  caret-color:red;
+
 
 }
 ::placeholder {
@@ -2353,7 +2356,7 @@ margin: 20px 0;
   background: none;
   width: 70;
   height: 52.6px;
-  font-family: 'robotoArabic1';
+  font-family: 'robotoArabic2';
   font-size: 21px;
   font-weight: bold;
   font-style: normal;
@@ -2361,6 +2364,7 @@ margin: 20px 0;
   line-height: 1.95;
   letter-spacing: normal;
   text-align: left;
+  float: left;
   color: #bf0711;
   cursor: pointer;
   outline:none;
@@ -2369,7 +2373,7 @@ margin: 20px 0;
   justify-content: center;
   align-content: center;
   width: 800.8px;
-  height: 400.6px;
+  height: 370.6px;
   border-radius: 51px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   background-color: #edeaea;
@@ -2397,6 +2401,7 @@ margin: 20px 0;
   color: #bf0711;
   float:right;
   margin-top:30px; 
+  margin-right:10px;
 
 }
 .Rectangle-470 {
@@ -2419,6 +2424,7 @@ margin: 20px 0;
   letter-spacing: normal;
   text-align: center;
   color: black;
+  margin-left:10px;
 
 }
 .bell {
@@ -2740,27 +2746,4 @@ html,body{
 
 
 
-/* .nav-social a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: 'robotoArabic1';
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  color: #000000;
-}
 
-@media (min-width: 960px) {
-
-  .main-navigation a {
-    display: inline-block;
-    padding: 0;
-  }
-}
-
-.main-navigation .current-menu-item a,
-.main-navigation a:hover {
-  color: #FAF0CA;
-} */

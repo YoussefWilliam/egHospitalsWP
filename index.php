@@ -1,4 +1,10 @@
 <?php get_header();?>
+<style>
+  input[type="text"]::placeholder{
+    text-align: right; 
+    direction: rtl;
+  }
+</style>  
 
 <!-- HEADER AND HOME PAGE IN THE BEGINING -->
 
@@ -7,63 +13,114 @@
         echo get_theme_file_uri('/images/doc.png');
   ?>);"></div>
     <div class="page-banner__content container t-center c-white">
-      <button href="submit" class="near-by" >قريب مني &nbsp; <i class="fa fa-map-marker"></i></button>
-      <button type="submit" class="search-btn">بحث</button>
+      <button href="submit" class="near-by"  style="margin-left:-90px">قريب مني &nbsp; <i class="fa fa-map-marker"></i></button> &nbsp;  &nbsp; 
+      <button type="submit" class="search-btn"   style="margin-left:-90px">بحث</button>
 
-      <input class= "Rectangle-416" type="text" placeholder="ابحث عن مستشفي">	
+      <input class= "Rectangle-416" type="text" placeholder=" ابحث عن مستشفي">	
       <button  class="Ellipse-47"><i class="fa fa-search"></i></button>
         <br/>
-        <div class="Rectangle-478">
+         <div class="Rectangle-478">
             <div class="Rectangle-470">
-                    <button class="arrow-left"></button>
-                تابع لوزارة الصحة | تابع لنقابة |  تأمين صحي 
-                    <button class="arrow-right"></button>
+                    <div id="carouselExampleControls"  class="carousel slide " data-ride="carousel" data-interval="false" style=" margin: 0 auto" >
+                      <div class="corausel-inner">
+                        <div class="carousel-item active ">
+                          <span style="color:#bf0711;"> تأمين صحي   </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> تابع لوزارة الصحة  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> تابع لنقابة  </span>
+                        </div>
+                      </div>
+                      <br>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" >
+                          <button class="arrow-left"></button>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <button class="arrow-right"></button>
+                      </a>
+                    </div>
+                  
               </div><div class="Rectangle-466">نوع المستشفى</div> 
-              
-            <div class="Rectangle-470">
-                <button class="arrow-left"></button>
-                  <span style="color:#bf0711;"> اشعة و فحوصات   </span>
-                | أسنان | إسعاف
-                <button class="arrow-right"></button>
-            </div> <div class="Rectangle-466"> التخصصات</div> 
 
-            <div class="Rectangle-470">
-                <button class="arrow-left"></button>
-                استثمارية | اقتصادية |   <span style="color:#bf0711;"> رمزية  </span> | مجانية
-                <button class="arrow-right"></button>
-            </div> <div class="Rectangle-466">الاسعار</div> 
+              <div class="Rectangle-470">
+                    <div id="carouselExampleControls1"  class="carousel slide" data-ride="carousel"  data-interval="false">
+                      <div class="corausel-inner">
+                        <div class="carousel-item active ">
+                          <span style="color:#bf0711;"> اشعة و فحوصات  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> أسنان  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> إسعاف  </span>
+                        </div>
+                      </div>
+                      <br>
+                      <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                      <button class="arrow-left"></button>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                        <button class="arrow-right"></button>
+                      </a>
+                    </div>
+              </div><div class="Rectangle-466">التخصصات</div> 
+            
+              <div class="Rectangle-470">
+                    <div id="carouselExampleControls2"  class="carousel slide" data-ride="carousel"  data-interval="false">
+                      <div class="corausel-inner">
+                        <div class="carousel-item active ">
+                          <span style="color:#bf0711;">استثمارية  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> اقتصادية  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> رمزية  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> مجانية  </span>
+                        </div>
+                      </div>
+                      <br>
+                      <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                      <button class="arrow-left"></button>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                        <button class="arrow-right"></button>
+                      </a>
+                    </div>
+              </div><div class="Rectangle-466">الاسعار</div> 
 
-            <div class="Rectangle-470">
-                <button class="arrow-left"></button>
-                <span style="color:#bf0711;"> القاهرة  </span> | الإسكندرية | الجيزة | اسيوط
-                <button class="arrow-right"></button>
-            </div> <div class="Rectangle-466">المحافظة </div> 
+               <div class="Rectangle-470">           
+                     <div id="carouselExampleControls3"  class="carousel slide" data-ride="carousel"  data-interval="false">
+                      <div class="corausel-inner">
+                        <div class="carousel-item active ">
+                          <span style="color:#bf0711;">القاهرة  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> الإسكندرية  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> الجيزة  </span>
+                        </div>
+                        <div class="carousel-item  ">
+                          <span style="color:#bf0711;"> اسيوط  </span>
+                        </div>
+                      </div>
+                      <br>
+                      <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+                      <button class="arrow-left"></button>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+                        <button class="arrow-right"></button>
+                      </a>
+                    </div> 
+              </div><div class="Rectangle-466">المحافظة</div>
+       </div>
 
-      </div> 
-      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true" style="color:black;"></span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </a>
-</div> -->
+
       <div style="margin-top:40px">
         <button  class="bell"><i class="fa fa-bell-o"></i></button>
         <div class="Rectangle-406">رأيك يهمنا … ازاي بنختار المستشفى</div>

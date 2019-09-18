@@ -13406,3 +13406,5 @@ var slickSlider = new _SlickSlider2.default();
 
 /***/ })
 /******/ ]);
+
+// Instantiate the Bootstrap carousel
