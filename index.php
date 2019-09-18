@@ -5,6 +5,22 @@
     direction: rtl;
   }
 </style>  
+<script type="text/javascript">
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+    function toggle_visible(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
 
 <!-- HEADER AND HOME PAGE IN THE BEGINING -->
 
@@ -161,7 +177,22 @@
 
               <div class="Ellipse-green">70%</div>
             </div>
-            <div class="detailed-box">
+            <div class="detailed-box" >
+            <h1> <a href="#">مستشفى الصدر</a></h1> 
+              <img class="image-details"style="background-image: url(<?php 
+                    echo get_theme_file_uri('/images/EghospitalsPictures/sadr.jpg');
+              ?>);">
+
+              <div class="paragraph">
+                  مستشفى تأمين صحي حكومي ، يقدم خدمات آشعة وفحوصات عيادات خارجية ، بأسعار اقتصادية
+                    <br>المحافظة: بورسعيد
+                      <br>تليفون: 0663214790  
+              </div>
+
+              <div class="Ellipse-red">69%</div>
+            </div>
+
+            <div class="detailed-box" id="foo" style="display:none;">
             <h1> <a href="#">مستشفى الصدر</a></h1> 
               <img class="image-details"style="background-image: url(<?php 
                     echo get_theme_file_uri('/images/EghospitalsPictures/sadr.jpg');
@@ -175,7 +206,10 @@
 
               <div class="Ellipse-yellow">69%</div>
             </div>
+            <a href="#" onclick="toggle_visibility('foo'); toggle_visible('shoo');">المزيد </a>
           </div>
+          
+
         </div>
 
 
@@ -224,8 +258,25 @@
 
               <div class="Ellipse-green">90%</div>
             </div>
+            <div class="detailed-box" id="shoo" style="display:none;">
+            <h1> <a href="#"> الحميات بنجع حمادي</a></h1> 
+              <img class="image-details"style="background-image: url(<?php 
+                    echo get_theme_file_uri('/images/EghospitalsPictures/ng3.jpg');
+              ?>);">
+
+              <div class="paragraph">
+                مستشفى تابع لوزارة الصحة حكومي ، يقدم خدمات آشعة وفحوصات حميات رعاية مركزة طوارئ ، بأسعار رمزية مجانية
+                    <br>المحافظة: بورسعيد
+                    <br>تليفون: 0663214790
+            </div>
+
+              <div class="Ellipse-yellow">90%</div>
+            </div>
+            
           </div>
+
         </div>
+
       </div>
       
   </div>
